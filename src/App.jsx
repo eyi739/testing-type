@@ -7,6 +7,7 @@ function App() {
     <Greeter/>
     <Greeter/>
     <Greeter/>
+    <Greeter/>
   </div>
 )}
 
