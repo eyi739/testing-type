@@ -16,9 +16,7 @@ function App() {
  <div>
     <ShoppingList items={data}/>
     
-    
-    
-    
+  
     {/* <Slots val1="🍒" val2="🍒" val3="🍒"/>
     <Slots val1="🍒" val2="🍌" val3="🍉"/> */}
     {/* <Greeter person="Bob"/>
