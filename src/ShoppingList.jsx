@@ -1,17 +1,21 @@
-export default function ShoppingList({items}){
+import ShoppingListItem from "./ShoppingListItem"
+function ShoppingList({items}){
     return (
         <ul>
-            {items.map((i) => 
-                <li style={{color: i.completed ? "grey" : "white", 
-                            textDecoration: i.completed ? "line-through" : "none"
-                    }}
-                >
-                    {i.item} - {i.quantity}
-                </li>)}
+            {items.map((i) => (
+                // <ShoppingListItem 
+                //     key={i.id}
+                //     item={i.item}
+                //     quantity= {i.quantity}
+                //     completed= {i.completed}
+                // />
+                <ShoppingListItem key={i.id} {...i} />
+            ))}               
         </ul>
-    )
+        )
 }
 
+export default ShoppingList;
 // const data = [
 //     {item: 'egg', quantity: 12, completed: false},
 //     {item: 'milk', quantity: 1, completed: true},
