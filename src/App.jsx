@@ -1,6 +1,7 @@
 import './App.css';
 import Slots from "./Slots";
 import Counter from './Counter';
+import Toggler from './Toggler';
 // import Clicker from './Clicker';
 // import PropertyList from "./PropertyList";
 // import ShoppingList from './ShoppingList';
@@ -26,8 +27,10 @@ import Counter from './Counter';
 function App() {
  return ( 
   <div>
-    <Counter num={1}/>
-
+    <Toggler/>
+    
+    
+    {/* <Counter num={1}/> */}
     {/* <PropertyList properties={properties} />   */}
   {/* <Clicker message="HI!!!!!" buttonText="PLEASE CLICK ME"/>
   <Clicker message="PLEASE STOP CLICKING ME" buttonText="DON'T CLICK ME "/> */}
