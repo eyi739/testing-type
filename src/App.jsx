@@ -2,6 +2,7 @@ import './App.css';
 import Slots from "./Slots";
 import Counter from './Counter';
 import Toggler from './Toggler';
+import ColorBox from './ColorBox';
 // import Clicker from './Clicker';
 // import PropertyList from "./PropertyList";
 // import ShoppingList from './ShoppingList';
@@ -24,12 +25,22 @@ import Toggler from './Toggler';
 //   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 // ];
 
+const colors = [
+  "#DFFF00",
+   "#FFBF00",
+   "#FF7F50",
+   "#DE3163",
+   "#9FE2BF",
+   "#40E0D0",
+]
+
 function App() {
  return ( 
   <div>
-    <Toggler/>
+    <ColorBox/>
+    <ColorBox colors={colors}/>
     
-    
+    {/* <Toggler/> */}
     {/* <Counter num={1}/> */}
     {/* <PropertyList properties={properties} />   */}
   {/* <Clicker message="HI!!!!!" buttonText="PLEASE CLICK ME"/>
