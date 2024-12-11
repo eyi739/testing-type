@@ -3,6 +3,7 @@ import Slots from "./Slots";
 import Counter from './Counter';
 import Toggler from './Toggler';
 import ColorBox from './ColorBox';
+import ColorBoxGrid from './ColorBoxGrid';
 // import Clicker from './Clicker';
 // import PropertyList from "./PropertyList";
 // import ShoppingList from './ShoppingList';
@@ -37,7 +38,7 @@ const colors = [
 function App() {
  return ( 
   <div>
-    <ColorBox colors={colors}/>
+    <ColorBoxGrid colors={colors}/>
     
     {/* <Toggler/> */}
     {/* <Counter num={1}/> */}
