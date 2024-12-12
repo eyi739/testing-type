@@ -4,6 +4,7 @@ import Counter from './Counter';
 import Toggler from './Toggler';
 import ColorBox from './ColorBox';
 import ColorBoxGrid from './ColorBoxGrid';
+import ScoreKeeper from './ScoreKeepers';
 // import Clicker from './Clicker';
 // import PropertyList from "./PropertyList";
 // import ShoppingList from './ShoppingList';
@@ -38,13 +39,8 @@ const colors = [
 function App() {
  return ( 
   <div>
-    <ColorBoxGrid colors={colors}/>
-    
-    {/* <Toggler/> */}
-    {/* <Counter num={1}/> */}
-    {/* <PropertyList properties={properties} />   */}
-  {/* <Clicker message="HI!!!!!" buttonText="PLEASE CLICK ME"/>
-  <Clicker message="PLEASE STOP CLICKING ME" buttonText="DON'T CLICK ME "/> */}
+    <ScoreKeeper/>
+    {/* <Counter/> */}
   </div>
 )}
 
