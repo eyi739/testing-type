@@ -3,8 +3,9 @@ import {useState} from "react";
 export default function ScoreKeeper(){
     const [scores, setScores] = useState({p1Score: 0, p2Score: 0})
     function increaseP1Score(){
-        const newScores = {...scores, scores: p1Score +1}
-        setScores(newScores);
+        setScores(oldScores => {
+            return {...oldScores, p1Score: oldScores.p1Score + 1}
+        });
     }
     return (
         <div>
