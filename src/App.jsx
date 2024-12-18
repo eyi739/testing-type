@@ -4,7 +4,7 @@ import Counter from './Counter';
 import Toggler from './Toggler';
 import ColorBox from './ColorBox';
 import ColorBoxGrid from './ColorBoxGrid';
-import ScoreKeeper from './ScoreKeepers';
+import ScoreKeepers from './ScoreKeepers';
 import EmojiClicker from './EmojiClicker';
 // import Clicker from './Clicker';
 // import PropertyList from "./PropertyList";
@@ -40,8 +40,8 @@ const colors = [
 function App() {
  return ( 
   <div>
-    <EmojiClicker />
-    {/* <ScoreKeeper/> */}
+    {/* <EmojiClicker /> */}
+    <ScoreKeepers numPlayers={10} target={3}/>
     {/* <Counter/> */}
   </div>
 )}
