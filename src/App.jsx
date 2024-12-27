@@ -6,6 +6,8 @@ import ColorBox from './ColorBox';
 import ColorBoxGrid from './ColorBoxGrid';
 import ScoreKeepers from './ScoreKeepers';
 import EmojiClicker from './EmojiClicker';
+import Lucky7 from './Lucky7';
+import Die from './Die';
 // import Clicker from './Clicker';
 // import PropertyList from "./PropertyList";
 // import ShoppingList from './ShoppingList';
@@ -28,20 +30,22 @@ import EmojiClicker from './EmojiClicker';
 //   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 // ];
 
-const colors = [
-  "#DFFF00",
-   "#FFBF00",
-   "#FF7F50",
-   "#DE3163",
-   "#9FE2BF",
-   "#40E0D0",
-]
+// const colors = [
+//   "#DFFF00",
+//    "#FFBF00",
+//    "#FF7F50",
+//    "#DE3163",
+//    "#9FE2BF",
+//    "#40E0D0",
+// ]
 
 function App() {
  return ( 
   <div>
+    <Die val={2}/>
+    {/* <Lucky7/> */}
     {/* <EmojiClicker /> */}
-    <ScoreKeepers numPlayers={10} target={3}/>
+    {/* <ScoreKeepers numPlayers={10} target={3}/> */}
     {/* <Counter/> */}
   </div>
 )}
