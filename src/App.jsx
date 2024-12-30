@@ -8,6 +8,10 @@ import ScoreKeepers from './ScoreKeepers';
 import EmojiClicker from './EmojiClicker';
 import Lucky7 from './Lucky7';
 import Die from './Die';
+import Dice from './Dice';
+import LuckyN from './LuckyN';
+
+import { sum } from './utils';
 // import Clicker from './Clicker';
 // import PropertyList from "./PropertyList";
 // import ShoppingList from './ShoppingList';
@@ -39,15 +43,21 @@ import Die from './Die';
 //    "#40E0D0",
 // ]
 
+function lessThan4(dice) {
+  return sum(dice) < 4;
+}
+
+function allSameValue(dice) {
+ return dice.every((v) => v === dice[0])
+}
+
 function App() {
  return ( 
   <div>
-    <Die val={2}/>
-    {/* <Lucky7/> */}
-    {/* <EmojiClicker /> */}
-    {/* <ScoreKeepers numPlayers={10} target={3}/> */}
-    {/* <Counter/> */}
+    <LuckyN numDice={3} winCheck={lessThan4} />
+    <LuckyN numDice={2} winCheck={allSameValue}/>
   </div>
 )}
 
 export default App
+
