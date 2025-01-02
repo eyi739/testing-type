@@ -10,6 +10,8 @@ import Lucky7 from './Lucky7';
 import Die from './Die';
 import Dice from './Dice';
 import LuckyN from './LuckyN';
+import Box from './Box';
+import BoxGrid from './BoxGrid';
 
 import { sum } from './utils';
 // import Clicker from './Clicker';
@@ -54,8 +56,10 @@ function allSameValue(dice) {
 function App() {
  return ( 
   <div>
-    <LuckyN numDice={3} winCheck={lessThan4} />
-    <LuckyN numDice={2} winCheck={allSameValue}/>
+    <BoxGrid/>
+
+    {/* <LuckyN numDice={3} winCheck={lessThan4} />
+    <LuckyN numDice={2} winCheck={allSameValue}/> */}
   </div>
 )}
 
