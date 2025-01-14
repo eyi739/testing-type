@@ -57,8 +57,7 @@ function App() {
  return ( 
   <div>
     <Counter/>
-    <BoxGrid/>
-
+    {/* <BoxGrid/> */}
     {/* <LuckyN numDice={3} winCheck={lessThan4} />
     <LuckyN numDice={2} winCheck={allSameValue}/> */}
   </div>
