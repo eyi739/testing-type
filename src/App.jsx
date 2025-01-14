@@ -56,6 +56,7 @@ function allSameValue(dice) {
 function App() {
  return ( 
   <div>
+    <Counter/>
     <BoxGrid/>
 
     {/* <LuckyN numDice={3} winCheck={lessThan4} />
