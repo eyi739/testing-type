@@ -42,3 +42,7 @@
 } */
 
  */
+
+ .Loader {
+  transition: 3s opacity;
+ }

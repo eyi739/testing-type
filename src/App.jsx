@@ -12,8 +12,10 @@ import Dice from './Dice';
 import LuckyN from './LuckyN';
 import Box from './Box';
 import BoxGrid from './BoxGrid';
+import QuoteFetcherLoader from './QuoteFetcherLoader';
 
 import { sum } from './utils';
+import QuoteFetcher from './QuoteFetcherLoader';
 // import Clicker from './Clicker';
 // import PropertyList from "./PropertyList";
 // import ShoppingList from './ShoppingList';
@@ -56,7 +58,7 @@ function allSameValue(dice) {
 function App() {
  return ( 
   <div>
-    <Counter/>
+    <QuoteFetcherLoader/>
     {/* <BoxGrid/> */}
     {/* <LuckyN numDice={3} winCheck={lessThan4} />
     <LuckyN numDice={2} winCheck={allSameValue}/> */}
