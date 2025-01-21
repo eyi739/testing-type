@@ -22,7 +22,7 @@ export default function QuoteFetcher() {
     return (
         <div>
             <p className="Loader" style={{opacity: isLoading ? 2 : 0}}>
-                Loading......
+                Loading.......
             </p>
             <h1>{quote.text}</h1>
             <h3>{quote.author}</h3>
