@@ -13,6 +13,7 @@ import LuckyN from './LuckyN';
 import Box from './Box';
 import BoxGrid from './BoxGrid';
 import QuoteFetcherLoader from './QuoteFetcherLoader';
+import Button from "@mui/material/Button"
 
 import { sum } from './utils';
 import QuoteFetcher from './QuoteFetcherLoader';
@@ -47,21 +48,20 @@ import QuoteFetcher from './QuoteFetcherLoader';
 //    "#40E0D0",
 // ]
 
-function lessThan4(dice) {
-  return sum(dice) < 4;
-}
+// function lessThan4(dice) {
+//   return sum(dice) < 4;
+// }
 
-function allSameValue(dice) {
- return dice.every((v) => v === dice[0])
-}
+// function allSameValue(dice) {
+//  return dice.every((v) => v === dice[0])
+// }
 
 function App() {
  return ( 
   <div>
-    <QuoteFetcherLoader/>
-    {/* <BoxGrid/> */}
-    {/* <LuckyN numDice={3} winCheck={lessThan4} />
-    <LuckyN numDice={2} winCheck={allSameValue}/> */}
+    <Button variant='contained'>Contained</Button>
+    <Button variant='text' onClick={()=> {alert("Hi")}}>Text</Button>
+    <Button variant='outlined'>Outlined</Button>
   </div>
 )}
 
