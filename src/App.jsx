@@ -16,6 +16,7 @@ import QuoteFetcherLoader from './QuoteFetcherLoader';
 import Button from "@mui/material/Button"
 import IconButton from "@mui/material/IconButton"
 import AlarmIcon from "@mui/icons-material/Alarm"
+import RatingDemo from './RatingDemo';
 
 import { sum } from './utils';
 import QuoteFetcher from './QuoteFetcherLoader';
@@ -61,18 +62,7 @@ import QuoteFetcher from './QuoteFetcherLoader';
 function App() {
  return ( 
   <div>
-    <Button variant='contained'>Contained</Button>
-    <Button 
-      color='secondary'
-      size='small'
-      variant='text' 
-      onClick={()=> {alert("Hi")}}>
-        Text
-    </Button>
-    <Button variant='outlined'>Outlined</Button>
-    <IconButton color="secondary" aria-label="add an alarm">
-      <AlarmIcon/>
-    </IconButton>
+    <RatingDemo/>
   </div>
 )}
 
