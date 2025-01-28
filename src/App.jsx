@@ -17,6 +17,8 @@ import Button from "@mui/material/Button"
 import IconButton from "@mui/material/IconButton"
 import AlarmIcon from "@mui/icons-material/Alarm"
 import RatingDemo from './RatingDemo';
+import FormDemo from './FormDemo';
+
 
 import { sum } from './utils';
 import QuoteFetcher from './QuoteFetcherLoader';
@@ -62,7 +64,7 @@ import QuoteFetcher from './QuoteFetcherLoader';
 function App() {
  return ( 
   <div>
-    <RatingDemo/>
+    <FormDemo/>
   </div>
 )}
 
